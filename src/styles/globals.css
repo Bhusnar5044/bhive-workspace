@@ -4,23 +4,23 @@
 
 @layer base {
   h1 {
-    @apply text-4xl font-bold md:text-5xl;
-  }
-
-  h2 {
     @apply text-3xl font-bold md:text-4xl;
   }
 
-  h3 {
+  h2 {
     @apply text-2xl font-bold md:text-3xl;
   }
 
+  h3 {
+    @apply text-xl font-bold md:text-2xl;
+  }
+
   h4 {
-    @apply text-xl font-bold;
+    @apply text-lg font-bold md:text-xl;
   }
 
   h5 {
-    @apply text-lg font-bold;
+    @apply text-sm font-bold md:text-lg;
   }
 
   .wrapper {
