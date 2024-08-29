@@ -17,7 +17,7 @@
     "up-latest": "pnpm up-interactive -L",
     "release": "standard-version",
     "push-release": "git push --follow-tags origin main",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@theme-toggles/react": "^4.1.0",
@@ -42,6 +42,7 @@
     "commitlint": "^19.3.0",
     "eslint": "^8.57.0",
     "eslint-config-sznm": "^2.0.3",
+    "eslint-plugin-react-refresh": "^0.4.11",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "postcss": "^8.4.38",
@@ -50,6 +51,7 @@
     "rollup-plugin-visualizer": "^5.12.0",
     "standard-version": "^9.5.0",
     "tailwindcss": "^3.4.3",
+    "tailwindcss-font-inter": "^3.1.0",
     "typescript": "5.4.5",
     "vite": "^5.2.10",
     "vite-plugin-checker": "^0.6.4",
