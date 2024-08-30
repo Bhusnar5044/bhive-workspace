@@ -12,7 +12,7 @@ const SpaceOverviewCard: React.FC<Props> = ({ spaceOverviewDetails }) => {
   return (
     <div className="flex max-w-sm flex-col overflow-hidden rounded-md bg-white p-3 shadow-dropShad drop-shadow-lg">
       <div className="mb-[1.125rem] flex justify-between gap-4">
-        <p className="line-clamp-2 text-xl font-semibold text-textMain">
+        <p className="line-clamp-2 text-lg font-semibold text-textMain lg:text-xl">
           {address}
         </p>
         <div className="flex h-[3.25rem] w-[3.25rem] flex-col items-center justify-around gap-2 bg-lightGray p-2">
@@ -52,7 +52,7 @@ const SpaceOverviewCard: React.FC<Props> = ({ spaceOverviewDetails }) => {
           label="Day Pass"
           text={
             <div className="flex items-baseline">
-              <p className="text-xl font-semibold text-textMain">
+              <p className="text-lg font-semibold text-textMain lg:text-xl">
                 {`₹  ${day_pass_price}`}
               </p>
               <span className="tex-xs text-textSecondary">/day</span>
@@ -66,7 +66,9 @@ const SpaceOverviewCard: React.FC<Props> = ({ spaceOverviewDetails }) => {
           label="Day Pass"
           text={
             <div className="flex items-baseline">
-              <p className="text-xl font-semibold text-textMain">₹ 249 </p>
+              <p className="text-lg font-semibold text-textMain lg:text-xl">
+                ₹ 249{' '}
+              </p>
               <span className="tex-xs text-textSecondary">/day</span>
             </div>
           }

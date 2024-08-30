@@ -16,9 +16,17 @@ const Layout = ({ children }: LayoutProps) => {
       <Meta />
       <div className="dark:bg-black flex min-h-screen flex-col bg-lightGray text-textMain dark:text-white">
         <Header />
-        <section className="mb-5 flex flex-wrap-reverse">
+        <div className="mx-auto hidden max-w-screen-xl lg:block">
+          <div className="relative w-[1280px]">
+            <h1 className="absolute top-36 text-textMain  lg:w-2/5">
+              Host your meeting with world-class amenities. Starting at{' '}
+              <span className="text-primary2">₹199/-!</span>
+            </h1>
+          </div>
+        </div>
+        <section className="mb-[3.12rem] flex flex-wrap-reverse lg:mb-[7.5rem]">
           <div className="flex w-full items-center justify-start bg-banner px-4 lg:w-2/3 lg:px-0">
-            <h1 className="text-2xl text-textMain lg:hidden lg:text-4xl">
+            <h1 className="text-center text-lg text-textMain md:text-4xl lg:hidden">
               Host your meeting with world-class amenities. Starting at{' '}
               <span className="text-primary2">₹199/-!</span>
             </h1>
