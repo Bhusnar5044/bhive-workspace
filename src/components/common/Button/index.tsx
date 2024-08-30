@@ -23,14 +23,14 @@ const Button: FC<ButtonProps> = ({
     <button
       type="button"
       className={cn(
-        'relative flex min-w-[10.67rem] items-center justify-between gap-3 rounded p-2 text-sm text-white shadow-dropShad drop-shadow focus:outline-none focus:ring-4',
+        'relative flex min-w-[8.875rem] items-center justify-between gap-3 rounded p-2 text-sm text-white shadow-dropShad drop-shadow focus:outline-none focus:ring-4 lg:min-w-[10.67rem]',
         theme,
         className
       )}
     >
       <div className="flex flex-col items-baseline">
         {label && (
-          <span className="tex-sm whitespace-nowrap text-textSecondary">
+          <span className="lg:tex-sm whitespace-nowrap text-xs text-textSecondary">
             {label}
           </span>
         )}
