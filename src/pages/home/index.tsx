@@ -103,7 +103,7 @@ const Home = () => {
             className="lg:hidden"
           />
         </div>
-        <div className="relative flex w-full flex-col items-center gap-3 rounded bg-white pb-3 pt-[1.69rem] shadow-dropShad drop-shadow lg:h-[16.56rem] lg:w-auto  lg:items-end lg:justify-end lg:pb-[1.69rem] lg:pl-[35.89rem] lg:pr-10">
+        <div className="relative flex w-full flex-col items-center gap-3 rounded bg-white pb-3 pt-[1.69rem] shadow-dropShad drop-shadow lg:h-[16.56rem] lg:w-auto lg:items-end  lg:justify-end lg:rounded-lg lg:pb-[1.69rem] lg:pl-[35.89rem] lg:pr-10">
           <img
             src="/assets/download-app-banner.svg"
             alt="download app banner"
