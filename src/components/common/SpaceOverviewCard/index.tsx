@@ -10,8 +10,8 @@ const SpaceOverviewCard: React.FC<Props> = ({ spaceOverviewDetails }) => {
   const { address, images, day_pass_discounts_percentage, day_pass_price } =
     spaceOverviewDetails;
   return (
-    <div className="flex max-w-sm flex-col gap-3 overflow-hidden rounded bg-white p-3 shadow-dropShad drop-shadow-lg">
-      <div className="flex justify-between gap-4">
+    <div className="flex max-w-sm flex-col overflow-hidden rounded-md bg-white p-3 shadow-dropShad drop-shadow-lg">
+      <div className="mb-[1.125rem] flex justify-between gap-4">
         <p className="line-clamp-2 text-xl font-semibold text-textMain">
           {address}
         </p>
@@ -26,9 +26,9 @@ const SpaceOverviewCard: React.FC<Props> = ({ spaceOverviewDetails }) => {
           </span>
         </div>
       </div>
-      <div className="relative w-full">
+      <div className="relative mb-[1.37rem] w-full">
         <img
-          className="w-full"
+          className="h-[12.63rem] w-full"
           src={images?.[0] ?? ''}
           alt="HSR Sector 6, Service Road"
         />
@@ -48,7 +48,7 @@ const SpaceOverviewCard: React.FC<Props> = ({ spaceOverviewDetails }) => {
       <div className="flex justify-between">
         <Button
           enableSuffixIcon
-          discount={day_pass_discounts_percentage?.[10].value}
+          discount={day_pass_discounts_percentage?.[1].value}
           label="Day Pass"
           text={
             <div className="flex items-baseline">
@@ -62,7 +62,7 @@ const SpaceOverviewCard: React.FC<Props> = ({ spaceOverviewDetails }) => {
         <Button
           variant="primary"
           enableSuffixIcon
-          discount={20}
+          discount={day_pass_discounts_percentage?.[10].value}
           label="Day Pass"
           text={
             <div className="flex items-baseline">

@@ -27,8 +27,8 @@ const Home = () => {
 
   return (
     <>
-      <section className="mb-5">
-        <div className="justify-betweenmb-4 flex">
+      <section className="mb-[7.5rem]">
+        <div className="mb-10 flex justify-between">
           <h2>Why Choose us?</h2>
           <img
             src="assets/icons/arrow.svg"
@@ -75,8 +75,8 @@ const Home = () => {
           <CardChip title="Sports Area" iconUrl="/assets/icons/sport.svg" />
         </div>
       </section>
-      <section className="mb-5">
-        <div className="mb-4 flex justify-between">
+      <section className="mb-[7.5rem]">
+        <div className="mb-10 flex justify-between">
           <h2>Our Space Overview</h2>
           <img
             src="assets/icons/arrow.svg"
@@ -84,14 +84,14 @@ const Home = () => {
             className="lg:hidden"
           />
         </div>
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-[2.8rem] lg:grid-cols-3">
           {data?.map((item) => (
             <SpaceOverviewCard key={item.id} spaceOverviewDetails={item} />
           ))}
         </div>
       </section>
-      <section>
-        <div className="mb-4 flex justify-between">
+      <section className="mb-10">
+        <div className="mb-10 flex justify-between gap-3 lg:mb-[11.12rem] lg:gap-0">
           <h2>Download our app now</h2>
           <img
             src="assets/icons/arrow.svg"
@@ -99,16 +99,25 @@ const Home = () => {
             className="lg:hidden"
           />
         </div>
-        <div className="flex">
+        <div className="relative flex w-full items-end bg-white pb-[1.69rem] lg:h-[16.56rem] lg:w-auto lg:pl-[35.89rem] lg:pr-10">
           <img
             src="/assets/download-app-banner.svg"
             alt="download app banner"
+            className="absolute bottom-0 left-8"
           />
-          <div>
-            <p className="hidden text-textSecondary lg:block">
+          <div className="">
+            <p className="mb-[2.4rem] hidden text-right text-textSecondary lg:block">
               Boost your productivity with the BHIVE Workspace app. Elevate your
               workspace, collaborate efficiently, and unlock exclusive perks.
             </p>
+            <div className="flex gap-3">
+              <a href="#" className="rounded-md">
+                <img src="assets/googlePlay.svg" alt="googlePlay" />
+              </a>
+              <a href="#" className="rounded-md">
+                <img src="assets/googlePlay.svg" alt="App Store" />
+              </a>
+            </div>
           </div>
         </div>
       </section>

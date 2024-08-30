@@ -18,7 +18,7 @@ const Layout = ({ children }: LayoutProps) => {
         <Header />
         <section className="mb-5 flex flex-wrap-reverse">
           <div className="flex w-full items-center justify-start bg-banner px-4 lg:w-2/3 lg:px-0">
-            <h1 className="text-2xl text-textMain lg:text-4xl">
+            <h1 className="text-2xl text-textMain lg:hidden lg:text-4xl">
               Host your meeting with world-class amenities. Starting at{' '}
               <span className="text-primary2">₹199/-!</span>
             </h1>
@@ -29,7 +29,9 @@ const Layout = ({ children }: LayoutProps) => {
             className="w-full lg:w-1/3"
           />
         </section>
-        <main className="mx-auto max-w-screen-xl px-4 lg:px-0">{children}</main>
+        <main className="relative mx-auto max-w-screen-xl px-4 lg:px-0">
+          {children}
+        </main>
         <Footer />
       </div>
     </ThemeProvider>
