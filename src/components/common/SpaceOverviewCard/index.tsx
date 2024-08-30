@@ -33,15 +33,15 @@ const SpaceOverviewCard: React.FC<Props> = ({ spaceOverviewDetails }) => {
           alt="HSR Sector 6, Service Road"
         />
         <Chip
-          className="absolute left-4 top-4 bg-gradient-to-r from-textMain to-[#2F4B59] text-sm text-primary2 shadow-[#FFD04F99] drop-shadow"
+          className="absolute left-4 top-4 flex gap-1 rounded bg-gradient-to-r from-textMain to-[#2F4B59] px-2 py-1 text-xs text-primary2 shadow-[#FFD04F99] drop-shadow lg:text-sm"
           icon={
             <img
               className="h-3 w-3"
-              src="/assets/icons/platinum.svg"
-              alt="platinum"
+              src="/assets/icons/campus.svg"
+              alt="campus"
             />
           }
-          label="Platinum"
+          label="Campus"
         />
       </div>
 
