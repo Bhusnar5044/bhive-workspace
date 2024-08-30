@@ -18,7 +18,7 @@ const Layout = ({ children }: LayoutProps) => {
         <Header />
         <div className="mx-auto hidden max-w-screen-xl lg:block">
           <div className="relative w-[1280px]">
-            <h1 className="absolute top-36 text-textMain  lg:w-2/5">
+            <h1 className="absolute top-36 text-textMain  lg:w-2/4">
               Host your meeting with world-class amenities. Starting at{' '}
               <span className="text-primary2">₹199/-!</span>
             </h1>
